@@ -45,7 +45,8 @@ class TesseactWrapper:
                 try:
                     self.tesseract = ctypes.cdll.LoadLibrary(libname_alt)
                 except:
-                    print("Trying to load '%s'..." % libname)
+                    print("Trying to load '%s'..." % libname_302)
+                    print("Trying to load '%s'..." % libname_303)
                     print("Trying to load '%s'..." % libname_alt)
                     print("Loading failed from the locations above.")
                     exit(1)
